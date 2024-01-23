@@ -1,0 +1,21 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 15px;
+}
+
+.list{
+    padding: 10px 0 5px 0;
+
+}

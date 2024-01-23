@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>DOM</h1>
+    <h2>¿Que es el DOM?</h2>
+    <p>El DOM, se refiere al modelo de objetos de un documento. Es una representación jerárquica de la estructura de un
+        documento HTML, que proporciona una interfaz programática para interactuar y manipular el contenido de la página
+        web mediante scripts, como JavaScript.</p>
+    <h2>Obtener un elemento o elementos en JavaScript.</h2>
+    <p>Podemos hacerlo con los siguientes métodos:</p>
+    <ul>
+        <li>getElementById:</li>
+        <span> - Este método busca y devuelve un elemento del documento HTML según su atributo "id". Dado que el "id" de
+            un elemento debe ser único en la página, suele utilizarse para acceder a un elemento específico.</span>
+        <p>let elemento = document.getElementById("idDelElemento");
+        </p>
+        <li>querySelector:</li>
+        <span> - Este método devuelve el primer elemento que coincide con un selector CSS específico. Puedes utilizar
+            cualquier selector CSS válido.</span>
+        <p>let elemento = document.querySelector("selectorCSS");
+        </p>
+        <li>querySelectorAll:</li>
+        <span> - Similar a querySelector, pero en lugar de devolver solo el primer elemento, devuelve todos los
+            elementos que coinciden con el selector.</span>
+        <p>let elementos = document.querySelectorAll("selectorCSS");
+        </p>
+    </ul>
+    <h2>NODOS</h2>
+    <p>Son objetos que representan partes de un documento HTML. El DOM organiza la estructura del documento en una
+        jerarquía de nodos, donde cada elemento, atributo, y fragmento de texto en el documento es un nodo.</p>
+    <ul>
+        <li class="list">Nodo texto</li>
+        <span> - Representa el contenido textual de un elemento. Por ejemplo, si tienes un párrafo "Texto aquí", el
+            "Texto aquí" sería un nodo de texto.</span>
+        <li class="list">Nodo elemento</li>
+        <span> - Representa un elemento HTML y puede tener nodos secundarios (hijos), como nodos de texto o
+            atributos.</span>
+        <li class="list">Nodo atributo</li>
+        <span> - Representa un atributo de un elemento. Cada atributo del elemento es considerado un nodo
+            separado.</span>
+    </ul>
+    <h2>TEXTCONTENT</h2>
+    <p>Es una propiedad en JavaScript que permite acceder al contenido de texto de un elemento y también modificarlo.
+        Esta propiedad devuelve o establece el contenido textual de un nodo y todos sus descendientes.</p>
+    <h2>ESTILOS CON JAVASCRIPT</h2>
+    <p>Se puede manipular los estilos de elementos HTML mediante el acceso y modificación de las propiedades de estilo
+        del objeto DOM.</p>
+    <div id="miDiv" class="elemento">Contenido de mi div.</div>
+    <h2>DOMTRAVERSING</h2>
+    <p>Es el proceso de moverse a través de la estructura del Document Object Model (DOM) para acceder, modificar o
+        manipular elementos HTML. Los métodos más comunes son:</p>
+    <ul>
+        <li>parentElement</li>
+        <li>nextSibling</li>
+        <li>childElement</li>
+    </ul>
+    <h2>CREATEELEMENT</h2>
+    <p>Esta función se utiliza para crear un nuevo elemento HTML en el DOM.</p>
+    <div id="contenedor"></div>
+    <h2>INNERHTML</h2>
+    <p>Esta propiedad es una forma de acceder y modificar el contenido HTML de un elemento. Al usar innerHTML, puedes obtener el HTML interno de un elemento o establecer un nuevo contenido HTML.</p>
+    <div id="otroDiv">Contenido original.</div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
